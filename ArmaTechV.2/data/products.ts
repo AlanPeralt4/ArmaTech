@@ -92,7 +92,7 @@ export const products: Product[] = [
     id: "monitor-1",
     name: "ASUS TUF Gaming VG27AQ",
     price: 3200,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/monitores/asus.png",
     category: "monitors",
     description: 'Monitor gaming de 27" con tecnología IPS y 165Hz para una experiencia fluida.',
     specs: {
@@ -108,7 +108,7 @@ export const products: Product[] = [
     id: "monitor-2",
     name: "LG UltraWide 34WP65C",
     price: 4800,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/monitores/lgd.png",
     category: "monitors",
     description: "Monitor ultrawide curvo ideal para productividad y entretenimiento.",
     specs: {
@@ -124,7 +124,7 @@ export const products: Product[] = [
     id: "cpu-1",
     name: "AMD Ryzen 9 7900X",
     price: 4200,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/procesadores/Ryzen 9 7900X.png",
     category: "cpus",
     description: "Procesador de 12 núcleos y 24 hilos para gaming y creación de contenido.",
     specs: {
@@ -140,7 +140,7 @@ export const products: Product[] = [
     id: "cpu-2",
     name: "Intel Core i7-13700K",
     price: 3800,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/procesadores/intel.png",
     category: "cpus",
     description: "Procesador Intel de 13va generación con arquitectura híbrida.",
     specs: {
@@ -156,7 +156,7 @@ export const products: Product[] = [
     id: "gpu-1",
     name: "NVIDIA RTX 4070 Ti",
     price: 7200,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Tarjetas-Graficas/blanca.png",
     category: "graphics-cards",
     description: "Tarjeta gráfica de alta gama con tecnología Ada Lovelace y Ray Tracing.",
     specs: {
@@ -172,7 +172,7 @@ export const products: Product[] = [
     id: "gpu-2",
     name: "AMD Radeon RX 7800 XT",
     price: 6800,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Tarjetas-Graficas/negra.png",
     category: "graphics-cards",
     description: "GPU AMD con arquitectura RDNA 3 para gaming en 1440p.",
     specs: {
@@ -188,7 +188,7 @@ export const products: Product[] = [
     id: "accessory-1",
     name: "Logitech MX Master 3S",
     price: 890,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/accesorios/mouse.png",
     category: "accessories",
     description: "Mouse inalámbrico premium para productividad con sensor de 8000 DPI.",
     specs: {
@@ -203,7 +203,7 @@ export const products: Product[] = [
     id: "accessory-2",
     name: "Corsair K95 RGB Platinum",
     price: 1450,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/accesorios/teclado.png",
     category: "accessories",
     description: "Teclado mecánico gaming con switches Cherry MX e iluminación RGB.",
     specs: {
