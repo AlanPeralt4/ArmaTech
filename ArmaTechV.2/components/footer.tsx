@@ -24,19 +24,19 @@ export default function Footer() {
                 <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-lg">La Paz, Bolivia</span>
+                <span className="text-lg">Cochabamba, Bolivia</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
                 <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
                   <Phone className="w-5 h-5" />
                 </div>
-                <span className="text-lg">+591 2 123-4567</span>
+                <span className="text-lg">+591 63908996</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
                 <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="text-lg">info@techstore.bo</span>
+                <span className="text-lg">Alanperalta@gmail.com</span>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-lg">&copy; 2024 TechStore Bolivia. Todos los derechos reservados.</p>
+          <p className="text-gray-400 text-lg">&copy; 2025 TechStore Bolivia. Todos los derechos reservados.</p>
           <div className="flex items-center space-x-2 mt-4 md:mt-0 text-gray-400">
             <span className="text-lg">Hecho con</span>
             <Heart className="w-5 h-5 text-red-500" />
