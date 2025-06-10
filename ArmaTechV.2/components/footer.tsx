@@ -38,6 +38,18 @@ export default function Footer() {
                 </div>
                 <span className="text-lg">Alanperalta@gmail.com</span>
               </div>
+              <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
+                <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <span className="text-lg">kevinCalderon@gmail.com</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
+                <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <span className="text-lg">luis321herlan@gmail.com</span>
+              </div>
             </div>
           </div>
 
