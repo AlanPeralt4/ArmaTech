@@ -4,14 +4,27 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Check } from "lucide-react"
+import type { ProductParams } from "@/types"
+import { Metadata } from "next"
 
-interface ProductPageProps {
-  params: {
-    id: string
+// Metadata dinámica
+export async function generateMetadata({ params }: ProductParams): Promise<Metadata> {
+  const product = products.find((p) => p.id === params.id)
+  
+  if (!product) {
+    return {
+      title: "Producto no encontrado",
+      description: "El producto que buscas no existe"
+    }
+  }
+
+  return {
+    title: `${product.name} | ArmaTech`,
+    description: product.description
   }
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params }: ProductParams) {
   const product = products.find((p) => p.id === params.id)
 
   if (!product) {
@@ -37,7 +50,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           <div className="space-y-4">
             <div className="aspect-square bg-gray-50 rounded-xl overflow-hidden">
               <Image
-                src={product.image || "/placeholder.svg"}
+                src={product.image}
                 alt={product.name}
                 width={600}
                 height={600}
@@ -49,7 +62,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 {product.images.map((image, index) => (
                   <div key={index} className="aspect-square bg-gray-50 rounded-lg overflow-hidden">
                     <Image
-                      src={image || "/placeholder.svg"}
+                      src={image}
                       alt={`${product.name} - Vista ${index + 1}`}
                       width={200}
                       height={200}
@@ -138,6 +151,7 @@ export default function ProductPage({ params }: ProductPageProps) {
   )
 }
 
+// Generación estática de rutas
 export function generateStaticParams() {
   return products.map((product) => ({
     id: product.id,

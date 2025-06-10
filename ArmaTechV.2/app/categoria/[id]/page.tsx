@@ -2,14 +2,27 @@ import Layout from "@/components/layout"
 import ProductCard from "@/components/product-card"
 import { categories, products } from "@/data/products"
 import { notFound } from "next/navigation"
+import type { CategoryParams, PageMetadata } from "@/types"
+import { Metadata } from "next"
 
-interface CategoryPageProps {
-  params: {
-    id: string
+// Metadata dinámica
+export async function generateMetadata({ params }: CategoryParams): Promise<Metadata> {
+  const category = categories.find((cat) => cat.id === params.id)
+  
+  if (!category) {
+    return {
+      title: "Categoría no encontrada",
+      description: "La categoría que buscas no existe"
+    }
+  }
+
+  return {
+    title: `${category.name} | ArmaTech`,
+    description: category.description
   }
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({ params }: CategoryParams) {
   const category = categories.find((cat) => cat.id === params.id)
   const categoryProducts = products.filter((product) => product.category === params.id)
 
@@ -51,6 +64,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   )
 }
 
+// Generación estática de rutas
 export function generateStaticParams() {
   return categories.map((category) => ({
     id: category.id,
