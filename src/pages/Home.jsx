@@ -1,0 +1,25 @@
+import React from 'react';
+import ProductCard from '../components/ProductCard';
+import laptopImg from '../assets/laptop.jpg'; // Asegúrate de que exista esta imagen
+
+function Home() {
+  return (
+    <div style={{ padding: '2rem' }}>
+      <h2 style={{ marginBottom: '1rem' }}>Nuestras Computadoras</h2>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <ProductCard
+          nombre="Laptop Gamer Ryzen 7"
+          precio="850"
+          imagen={laptopImg}
+        />
+        <ProductCard
+          nombre="PC de Escritorio Intel i5"
+          precio="620"
+          imagen={laptopImg}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default Home;
