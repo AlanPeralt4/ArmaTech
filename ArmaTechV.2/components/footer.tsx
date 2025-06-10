@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-sky-500 rounded-2xl flex items-center justify-center shadow-large">
                 <Monitor className="w-7 h-7 text-white" />
               </div>
-              <span className="text-2xl font-bold">TechStore Bolivia</span>
+              <span className="text-2xl font-bold">ArmaTech</span>
             </div>
             <p className="text-gray-300 mb-8 max-w-md text-lg leading-relaxed">
               Tu tienda de tecnología de confianza en Bolivia. Ofrecemos los mejores productos tecnológicos con garantía
