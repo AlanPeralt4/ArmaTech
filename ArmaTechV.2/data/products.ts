@@ -44,8 +44,8 @@ export const products: Product[] = [
     id: "laptop-1",
     name: "ASUS ROG Strix G15",
     price: 12500,
-    image: "/placeholder.svg?height=300&width=400",
-    images: ["/placeholder.svg?height=300&width=400", "/placeholder.svg?height=300&width=400"],
+    image: "/laptops/laptop1.png",
+    images: ["/laptops/laptop4.png", "/laptops/laptop1.2.png"],
     category: "laptops",
     description: "Laptop gaming de alto rendimiento con procesador AMD Ryzen 7 y tarjeta gráfica RTX 3070.",
     specs: {
@@ -61,7 +61,7 @@ export const products: Product[] = [
     id: "laptop-2",
     name: "MacBook Pro M2",
     price: 18900,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/laptops/laptop2.png",
     category: "laptops",
     description: "MacBook Pro con chip M2, ideal para profesionales creativos y desarrollo.",
     specs: {
@@ -76,7 +76,7 @@ export const products: Product[] = [
     id: "laptop-3",
     name: "Dell XPS 13",
     price: 14200,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/laptops/laptop3.png",
     category: "laptops",
     description: "Ultrabook premium con diseño elegante y rendimiento excepcional.",
     specs: {
