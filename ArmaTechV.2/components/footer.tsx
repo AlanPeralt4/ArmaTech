@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-lg">&copy; 2025 TechStore Bolivia. Todos los derechos reservados.</p>
+          <p className="text-gray-400 text-lg">&copy; 2025 ArmaTech. Todos los derechos reservados.</p>
           <div className="flex items-center space-x-2 mt-4 md:mt-0 text-gray-400">
             <span className="text-lg">Hecho con</span>
             <Heart className="w-5 h-5 text-red-500" />
