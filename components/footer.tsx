@@ -32,11 +32,24 @@ export default function Footer() {
                 </div>
                 <span className="text-lg">+591 63908996</span>
               </div>
+              
+              <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
+                <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <span className="text-lg">+591 665717121</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
+                <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <span className="text-lg">+591 69550642</span>
+              </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
                 <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="text-lg">Alanperalta@gmail.com</span>
+                <span className="text-lg">ferchoalan81@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors">
                 <div className="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center">
